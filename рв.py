@@ -1,25 +1,14 @@
-import pygame
+def my_superfunction():
+    print('What an awesome print!')
 
 
-try:
-    w, h = [int(i) for i in input().split()]
-
-    def draw():
-        screen.fill((0, 0, 0))
-        pygame.draw.line(screen, 'white', (0, 0), (w, h), width=5)
-        pygame.draw.line(screen, 'white', (w, 0), (0, h), width=5)
-
-    if __name__ == '__main__':
-        pygame.init()
-        size = width, height = w, h
-        screen = pygame.display.set_mode(size)
-        pygame.display.set_caption('Крест')
-        while pygame.event.wait().type != pygame.QUIT:
-            draw()
-            pygame.display.flip()
-    pygame.quit()
+def main():
+    print('My first git program')
+    print('And I change it every day')
+    print('Again')
+    print('UFO came and added this line')
+    my_superfunction()
 
 
-except Exception:
-    print('Неправильный формат ввода')
-    quit()
+if __name__ == '__main__':
+    main()
